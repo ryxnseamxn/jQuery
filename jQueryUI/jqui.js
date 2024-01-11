@@ -20,4 +20,15 @@ $("#div2").accordion({
     icons:{header: "ui-icon-caret-1-s", activeHeader: "ui-icon-caret-1-n"},
     event: "mouseover"
 });
+$("#btn1").click(function(){
+    $("#dialog").dialog("open");
+})
+$("#dialog").dialog({
+    title: "Title using jquery",
+    draggable: true,
+    resizable: false,
+    closeOnEscape: false,
+    modal: true,
+    autoOpen: false
+})
 })
