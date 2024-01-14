@@ -1,3 +1,5 @@
+let language = ["HTML", "CSS", "Javascript", "php" ,"python", "java", "go", "swift", "kotlin", "C", "C++", "C#", "Perl", "Fortran", "Ruby", "Rust"]
+
 $("document").ready(function(){
 $("#date").datepicker({
     showOtherMonths: true, 
@@ -18,7 +20,6 @@ $("#tool").tooltip({
 $("#div2").accordion({
     collapsible: true,
     icons:{header: "ui-icon-caret-1-s", activeHeader: "ui-icon-caret-1-n"},
-    event: "mouseover"
 });
 $("#btn1").click(function(){
     $("#dialog").dialog("open");
@@ -31,4 +32,5 @@ $("#dialog").dialog({
     modal: true,
     autoOpen: false
 })
+$("#input").autocomplete({source: language},{ autoFocus: true})
 })
