@@ -33,4 +33,20 @@ $("#dialog").dialog({
     autoOpen: false
 })
 $("#input").autocomplete({source: language},{ autoFocus: true})
+$("#dialog").dialog({
+    draggable: true,
+    resizable: true, 
+    closeOnEscape: true,
+    model: false,
+    autoOpen: true
+})
+$("#btn3").click(function(){
+    //alert("Get is working")
+    let draggable = $("#dialog").dialog("option", "draggable")
+    alert(draggable)
+})
+$("#btn4").click(function(){
+    //alert("Set is working")
+    $("#dialog").dialog("option", "draggable", false)
+})
 })
